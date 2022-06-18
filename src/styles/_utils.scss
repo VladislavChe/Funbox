@@ -1,0 +1,27 @@
+$mainFont: 'trebuchetms', sans-serif;
+$addFont: 'Exo2', sans-serif;
+$mainFontSize: 16px;
+$time: all 0.2s ease-in-out;
+$blue: #1698d9;
+$lightBlue: #2ea8e6;
+$black: #000000;
+$lightBlack: #666666;
+$selected: #d91667;
+$lightSelected: #e52e7a;
+
+//Fonts
+//Trebuchet MS
+@font-face {
+  font-family: 'trebuchetms';
+  src: url('../fonts/trebuchetms.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+//Exo2.0-Thin
+@font-face {
+  font-family: 'Exo2';
+  src: url('../fonts/Exo2.0-Thin.otf') format('opentype');
+  font-style: normal;
+  font-weight: normal;
+}

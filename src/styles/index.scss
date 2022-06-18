@@ -1,0 +1,173 @@
+@import './utils';
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+
+  font-family: $mainFont;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  color: $lightBlack;
+  font-size: $mainFontSize;
+  line-height: 170%;
+
+  background-color: #fff;
+  text-transform: none;
+  overflow-x: hidden;
+
+  body *,
+  body *:before,
+  body *:after {
+    box-sizing: border-box;
+  }
+}
+
+div,
+textarea,
+p,
+input,
+form,
+span,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+
+  font-family: $mainFont;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+
+  font-family: $mainFont;
+}
+
+h1 {
+  font-family: $addFont;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0px 1px 1px #000000;
+}
+
+h2 {
+  color: $black;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+address,
+blockquote,
+figure,
+figcaption,
+main,
+details,
+fieldset {
+  display: block;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+  text-decoration: none;
+
+  box-sizing: border-box;
+  color: inherit;
+  border: none;
+  outline: none !important;
+  transition: all 0.2s ease-in-out;
+  &:hover,
+  &:active {
+    text-decoration: none;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+button,
+input {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
+  box-sizing: border-box;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  &:active,
+  &:hover,
+  &:focus {
+    outline: none;
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+li {
+  list-style-type: none;
+}
+
+.App {
+  position: relative;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1150px;
+  padding: 0 15px;
+}
+
+/*Responsive*/
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 26px;
+  }
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 0 10px;
+  }
+}
